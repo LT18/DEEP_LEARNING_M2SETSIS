@@ -70,8 +70,10 @@
     %%%%%%%%%%%%%%%%%%%%%%%%
     \section{Résumé de l'article}
     \emph{Consigne : un résumé court de l'article et de sa contribution (10l max)}\\
-    Le Context Encoder est un encoder permettant de faire de l'inpainting à partir d'un réseau de neurones.
-
+    Le \textbf{Context Encoder} est un \textbf{auto-encoder} permettant de faire de l'\textbf{inpainting} à partir d'un réseau de neurones. L'\textbf{inpainting} est le fait de reconstruire une partie manquante dans une image.\\
+    Pour faire cela, cet encoder prend en compte un maximum de \textbf{caractéristiques} de l'image existante. Ce réseau de neuronnes est consitué de plusieurs couches de \textbf{convolution} successives. Il est entrainé à l'aide de la méthode de \textbf{réseaux adverses génératifs}.\\
+    La fonction objectifs est déterminer de 2 manières différentes : par reconstruction et par GAN. Il est aussi possible de fusionner ces deux méthodes, ce qui s'avère être la méthode la plus aboutie selon plusieurs tests sur différentes bases d'images.
+    
     \section{Description de la 	méthode proposée}
     \emph{Consigne : une description de la méthode proposée qui fera notamment le lien avec les principes que nous avons vus en classe (structure de réseau, méthode d'entrainement...)}
 
